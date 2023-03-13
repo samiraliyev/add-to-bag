@@ -47,7 +47,7 @@ for (let i = 0; i < increment.length; i ++){
 function updateTotal() {
     let totalPrice = 0;
     for (let i = 0; i < total.length; i++) {
-        let itemTotal = parseFloat(total[i].textContent);
+        let itemTotal = parseInt(total[i].textContent);
         totalPrice += itemTotal;
     }
     totalSum.innerHTML = totalPrice;
