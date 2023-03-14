@@ -19,7 +19,7 @@ for (let i = 0; i < increment.length; i ++){
         let newPrice = eventElement.parentNode.parentNode.children[0].textContent;
         let newTotal = newPrice * newCount;
         let defaultTotal = eventElement.parentNode.parentNode.children[2].textContent;
-        defaultTotal.innerHTML = newPrice.toString();
+        defaultTotal.innerHTML = newPrice;
         total[i].innerHTML = newTotal;
         count[i].innerHTML = newCount;
         updateTotal();
@@ -33,7 +33,7 @@ for (let i = 0; i < increment.length; i ++){
         let newPrice = eventElement.parentNode.parentNode.children[0].textContent;
         let newTotal = newPrice * newCount;
         let defaultTotal = eventElement.parentNode.parentNode.children[2];
-        defaultTotal.innerHTML = newPrice.toString();
+        defaultTotal.innerHTML = newPrice;
         total[i].innerHTML = newTotal;
         count[i].innerHTML = newCount;
         updateTotal();
